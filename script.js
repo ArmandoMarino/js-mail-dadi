@@ -85,16 +85,19 @@ button.addEventListener("click", function(){
     const emailUserValue = emailUser.value;
 
     // EMAIL AUTORIZZATE
-    const emailAuthorized = [emailYahoo, emailGoogle, emailLibero, emailFastweb];
+    const emailAuthorized = ["armando@yahoo.it", "armando@gmail.com", "armando@libero.it", "armando@fastweb.it"];
 
-    const emailYahoo = "armando@yahoo.it";
-    const emailGoogle = "armando@gmail.com";
-    const emailLibero = "armando@libero.it";
-    const emailFastweb = "armando@fastweb.it";
+    const emailYahoo = emailAuthorized[0];
+    const emailGoogle = emailAuthorized[1];
+    const emailLibero = emailAuthorized[2];
+    const emailFastweb = emailAuthorized[3];
     
+    let validEmail = emailAuthorized;
+
     for (let i = 0; i < emailAuthorized.length; i++) {
-        if (i === emailUserValue){
+        if (emailUserValue === emailAuthorized[0]){
         alert("Welcome Armando!");
+        return;
     }else{
         alert ("The email is not authorized!");
         return;
