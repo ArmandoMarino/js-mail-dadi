@@ -91,6 +91,9 @@ button.addEventListener("click", function(){
     
     if (emailUser != emailAuthorized){
         alert("The email is not authorized!");
+    }else{
+        (emailUser = emailAuthorized)
+        alert ("Welcome Armando!");
     }
 });
 
