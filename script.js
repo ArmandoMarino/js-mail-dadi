@@ -18,8 +18,18 @@ console.log("JS OK");
 
 
 //! -------------------------------ESERCIZIO 1-------------------------------------
+// ELEMENTI DAL DOM
+const player = document.getElementById ("player");
+console.log (player);
+
+const cpu = document.getElementById ("cpu");
+console.log(cpu);
+
+const resultPrint = document.getElementById ("result-print");
+console.log(resultPrint);
 
 
+// MINI GAME DICE
 const randomUser = Math.random();
 console.log(randomUser + "random")
 
@@ -35,12 +45,26 @@ console.log(userNumber + "userNumber");
 let cpuNumber = Math.floor( randomCpu * ( max + 1 - min)) + min;
 console.log(cpuNumber + "cpuNumber");
 
+
+const userWins = "User Wins!";
+const cpuWins = "CPU Wins!";
+const draw = "DRAW !";
+
+player.innerHTML += userNumber;
+cpu.innerHTML += cpuNumber;
+
+
 if (userNumber > cpuNumber){
-    alert ("Player wins !");
+    resultPrint.innerHTML += userWins;
+    // alert ("Player wins !");
 }
 else if(userNumber === cpuNumber) {
-    alert (" Draw !");
+    resultPrint.innerHTML += draw;
+
+    // alert (" Draw !");
 }
 else {
-    alert (" CPU wins !");
+    resultPrint.innerHTML += cpuWins;
+    // alert (" CPU wins !");
 }
+
