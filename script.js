@@ -73,3 +73,26 @@ else {
 // Che ci sia un array da qualche parte?
 // Cosa devo controllare esattamente?
 
+const button = document.getElementById("button");
+console.log(button);
+
+
+button.addEventListener("click", function(){
+    // Prendo l'elemento dal DOM
+    const emailUser = document.getElementById("email");
+    console.log(emailUser);
+    // EMAIL AUTORIZZATE
+    const emailYahoo = "armando@yahoo.it";
+    const emailGoogle = "armando@gmail.com";
+    const emailLibero = "armando@libero.it";
+    const emailFastweb = "armando@fastweb.it";
+    
+    const emailAuthorized = [emailYahoo, emailGoogle, emailLibero, emailFastweb];
+    
+    if (emailUser != emailAuthorized){
+        alert("The email is not authorized!");
+    }
+});
+
+
+
