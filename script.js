@@ -93,11 +93,12 @@ button.addEventListener("click", function(){
     const emailAuthorized = [emailYahoo, emailGoogle, emailLibero, emailFastweb];
     
     
-for (let i = emailUserValue; i < 0; i++) {
+for (let i = emailUserValue; i < emailAuthorized.length; i++) {
     if (i === emailAuthorized){
         alert("Welcome Armando!");
     }else{
         alert ("The email is not authorized!");
+        return;
     }
 }
 });
