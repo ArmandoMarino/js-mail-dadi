@@ -93,7 +93,7 @@ button.addEventListener("click", function(){
     const emailAuthorized = [emailYahoo, emailGoogle, emailLibero, emailFastweb];
     
     
-for (let i = emailUserValue; i != emailAuthorized; i++) {
+for (let i = emailUserValue; i < 0; i++) {
     if (i === emailAuthorized){
         alert("Welcome Armando!");
     }else{
