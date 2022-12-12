@@ -1,5 +1,6 @@
 console.log("JS OK");
 
+//! -------------------------------ESERCIZIO 1-------------------------------------
 // -------------TRACCIA-----------
 
 // ESERCIZIO 1 - Gioco dei dadi
@@ -7,17 +8,8 @@ console.log("JS OK");
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
 // Stampiamo in pagina i due tiri e il risultato
 // -----------------------------------------------------------------
-// ESERCIZIO 2 - Finta Login
-// Inventa una lista di email autorizzate
-// Chiedi all’utente la sua email, con un piccolo form.
-// controlla che sia nella lista di chi può accedere,
-// stampa un messaggio appropriato sull’esito del controllo.
-// Prima di partire a scrivere codice poniamoci qualche domanda:
-// Che ci sia un array da qualche parte?
-// Cosa devo controllare esattamente?
 
 
-//! -------------------------------ESERCIZIO 1-------------------------------------
 // ELEMENTI DAL DOM
 const player = document.getElementById ("player");
 console.log (player);
@@ -67,4 +59,17 @@ else {
     resultPrint.innerHTML += cpuWins;
     // alert (" CPU wins !");
 }
+
+
+
+//! -------------------------------ESERCIZIO 2-------------------------------------
+
+// ESERCIZIO 2 - Finta Login
+// Inventa una lista di email autorizzate
+// Chiedi all’utente la sua email, con un piccolo form.
+// controlla che sia nella lista di chi può accedere,
+// stampa un messaggio appropriato sull’esito del controllo.
+// Prima di partire a scrivere codice poniamoci qualche domanda:
+// Che ci sia un array da qualche parte?
+// Cosa devo controllare esattamente?
 
