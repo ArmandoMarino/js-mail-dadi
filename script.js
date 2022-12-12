@@ -87,15 +87,13 @@ button.addEventListener("click", function(){
     // EMAIL AUTORIZZATE
     const emailAuthorized = ["armando@yahoo.it", "armando@gmail.com", "armando@libero.it", "armando@fastweb.it"];
 
-    const emailYahoo = emailAuthorized[0];
-    const emailGoogle = emailAuthorized[1];
-    const emailLibero = emailAuthorized[2];
-    const emailFastweb = emailAuthorized[3];
-    
-    let validEmail = emailAuthorized;
+    // const emailYahoo = emailAuthorized[0];
+    // const emailGoogle = emailAuthorized[1];
+    // const emailLibero = emailAuthorized[2];
+    // const emailFastweb = emailAuthorized[3];
 
     for (let i = 0; i < emailAuthorized.length; i++) {
-        if (emailUserValue === emailAuthorized[0]){
+        if (emailUserValue === emailAuthorized[0] || emailUserValue === emailAuthorized[1] || emailUserValue === emailAuthorized[2] || emailUserValue === emailAuthorized[3] ) {
         alert("Welcome Armando!");
         return;
     }else{
