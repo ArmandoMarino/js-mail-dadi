@@ -20,22 +20,25 @@ console.log("JS OK");
 //! -------------------------------ESERCIZIO 1-------------------------------------
 
 
-const random = Math.random();
-console.log(random + "random")
+const randomUser = Math.random();
+console.log(randomUser + "random")
+
+const randomCpu = Math.random();
+console.log(randomCpu + "random")
 
 const max = 6;
 const min = 1;
 
-let userNumber =  Math.floor( random * ( max + 1 - min)) + min;
+let userNumber =  Math.floor( randomUser * ( max + 1 - min)) + min;
 console.log(userNumber + "userNumber");
 
-let cpuNumber = Math.floor( random * ( max + 1 - min)) + min;
+let cpuNumber = Math.floor( randomCpu * ( max + 1 - min)) + min;
 console.log(cpuNumber + "cpuNumber");
 
 if (userNumber > cpuNumber){
     alert ("Player wins !");
 }
-else if(userNumber = cpuNumber) {
+else if(userNumber === cpuNumber) {
     alert (" Draw !");
 }
 else {
