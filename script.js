@@ -81,6 +81,8 @@ button.addEventListener("click", function(){
     // Prendo l'elemento dal DOM
     const emailUser = document.getElementById("email");
     console.log(emailUser);
+
+    const emailUserValue = emailUser.value;
     // EMAIL AUTORIZZATE
     const emailYahoo = "armando@yahoo.it";
     const emailGoogle = "armando@gmail.com";
@@ -89,7 +91,7 @@ button.addEventListener("click", function(){
     
     const emailAuthorized = [emailYahoo, emailGoogle, emailLibero, emailFastweb];
     
-    if (emailUser != emailAuthorized){
+    if (emailUserValue != emailAuthorized){
         alert("The email is not authorized!");
     }else{
         alert ("Welcome Armando!");
